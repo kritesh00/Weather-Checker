@@ -4,7 +4,7 @@
 
 # Weather Checker
 
-A React + Vite application that fetches and displays weather information for Kathmandu using the GoWeather API. Built with modern web technologies including React 19, Vite 7, and Tailwind CSS 4.
+A React + Vite application that fetches and displays weather information for different cities using the GoWeather API. Built with modern web technologies including React 19, Vite 7, and Tailwind CSS 4.
 
 ## Overview
 
