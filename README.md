@@ -1,3 +1,7 @@
+<div align-item=center>
+<img src = 'https://user-images.githubusercontent.com/74038190/212747107-5b654ba5-31c6-4366-b42b-51b822e9bc52.gif'/ >
+</div>
+
 # Weather Checker
 
 A React + Vite application that fetches and displays weather information for Kathmandu using the GoWeather API. Built with modern web technologies including React 19, Vite 7, and Tailwind CSS 4.
