@@ -1,11 +1,13 @@
 import {useState} from 'react';
 import Snowfall from 'react-snowfall'
 import Spinner from './Spinner';
+import WelcomeMessage from './WelcomeMessage';
 const Card =()=>{
     const [Description, setDescription]=useState("");
     const [Temperature, setTemparature]=useState("");
     const [text, setText]=useState("");
     const [Loading, setLoading]=useState(false);
+    const [welcomeMessage, setWelcomeMessage]=useState(false);
     
     const checkWeather=async()=>{
         
@@ -15,6 +17,7 @@ const Card =()=>{
             return;
         }
         else{
+            setWelcomeMessage(true);
             setLoading(true);
             
         }
@@ -37,6 +40,7 @@ const Card =()=>{
         <Snowfall/>
         <section className="flex justify-center items-center h-screen">
             <div className="flex flex-col gap-4 justify-center items-center h-150 w-75 bg-[#FEEE91] p-4 rounded-lg shadow-lg text-[#061E29] font-bold  " id='card'>
+                {welcomeMessage && <WelcomeMessage />}
                 <img src='/sun.svg' className='h-30 w-30'/>
                 <h1 className='text-[#061E29] text-2xl '>Weather Checker</h1>
                 <div className=' p-4 rounded-lg w-60 ' id='content'>
