@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Sun from "../assets/Sun.svg";
-import Moon from "../assets/Moon.svg";
+import Sun from "../assets/sun.svg";
+import Moon from "../assets/moon.svg";
 
 const Theme = () => {
 
