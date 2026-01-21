@@ -1,0 +1,22 @@
+:root {
+  --body_background: #87e5ff;
+  --color: #000000;
+  --card_background: #FEEE91; /* add card background variable */
+}
+
+body.dark {
+  --body_background: #0f172a;
+  --color: #ffffff;
+  --card_background: #1e293b; /* dark mode card background */
+}
+
+body {
+  background-color: var(--body_background);
+  color: var(--color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#card {
+  background-color: var(--card_background); 
+  transition: background-color 0.3s ease;
+}
